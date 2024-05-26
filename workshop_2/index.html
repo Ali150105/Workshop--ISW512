@@ -19,11 +19,17 @@
             border-radius: 10px;
         }
         #mifoto {
-            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
             margin-right: 20px;
         }
+        .section-separator {
+            background-color: #e0f7fa;
+            height: 10px;
+            margin: 20px 0;
+        }
         fieldset {
-            margin-top: 20px;
             border: 1px solid #dddddd;
             border-radius: 5px;
             padding: 20px;
@@ -52,12 +58,14 @@
     <div id="principal" class="container">
         <div class="row">
             <div class="col-3">
-                <img src="Foto CV.jpg" id="mifoto" width="150">
+                <img src="Foto CV.jpg" id="mifoto" alt="Foto CV">
             </div>
             <div class="col-9">
                 <h2>Alison Alfaro Arias</h2>
             </div>
         </div>
+
+        <div class="section-separator"></div>
 
         <fieldset>
             <legend>Datos Generales</legend>
@@ -69,6 +77,8 @@
             </ul>
         </fieldset>
 
+        <div class="section-separator"></div>
+
         <fieldset>
             <legend>Estudios Realizados</legend>
             <ul>
@@ -77,6 +87,8 @@
                 <li>Cursando Diplomado en Ingeniería del Software</li>
             </ul>
         </fieldset>
+
+        <div class="section-separator"></div>
 
         <fieldset>
             <legend>Idiomas</legend>
