@@ -1,5 +1,17 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Animales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+<body>
+    <h1>Bienvenido a la Página Principal</h1>
+    <img src="images/logo.png" alt="Logo">
+    <nav>
+        <ul>
+            <li><a href="dogs/index.html">Ir a la página de Perros</a></li>
+            <li><a href="cats/index.html">Ir a la página de Gatos</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
