@@ -8,13 +8,41 @@
 
 body {
     background-color: var(--sec-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-div#wrapper {
+#wrapper {
     width: 700px;
     border: var(--main-border-style);
-    padding: 0px;
-    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.logo {
+    text-align: center;
+}
+
+h1 {
+    color: #cf9623;
+    text-align: center;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+    background-color: #aacef6;
+    color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 div#box-model {
@@ -49,11 +77,6 @@ input[type="text"] {
 
 span, h1 {
     line-height: 2px;
-}
-
-h1 {
-    color: #cf9623;
-    text-align: center;
 }
 
 .required {
