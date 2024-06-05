@@ -17,9 +17,9 @@ span, h1 {
 h1 {
     color: #dd87f5;
     text-align: center;
-    margin-top: 30px; /* Ajusta este valor para separar más el texto de las imágenes */
+    margin-top: 80px; /* Ajusta este valor para separar más el texto de las imágenes */
 }
 
 img {
-    margin-bottom: 150px; /* Ajusta este valor para separar más las imágenes del texto */
+    margin-bottom: 80px; /* Ajusta este valor para separar más las imágenes del texto */
 }
