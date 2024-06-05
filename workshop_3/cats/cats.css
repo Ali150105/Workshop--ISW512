@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #9795f8;
-	--important-color: #e34529;
-	--secondary-color: white;
-	--main-border-style: 5px solid var(--primary-color);
-	--strong-border-style: 5px solid var(--primary-color);
+    --primary-color: #76b5f4;
+    --important-color: #e34529;
+    --secondary-color: white;
+    --main-border-style: 5px solid var(--primary-color);
+    --strong-border-style: 5px solid var(--primary-color);
 }
 
 body {
@@ -11,10 +11,15 @@ body {
 }
 
 span, h1 {
-	line-height: 5px;
+    line-height: 5px;
 }
 
 h1 {
-	color: #ef8dcd;
-	text-align: center;
+    color: #dd87f5;
+    text-align: center;
+    margin-top: 30px; /* Ajusta este valor para separar más el texto de las imágenes */
+}
+
+img {
+    margin-bottom: 30px; /* Ajusta este valor para separar más las imágenes del texto */
 }
