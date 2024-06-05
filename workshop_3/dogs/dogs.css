@@ -2,7 +2,7 @@
     --primary-color: #76b5f4;
 	--important-color: #e34529;
 	--secondary-color: white;
-	--main-border-style: 1px solid var(--primary-color);
+	--main-border-style: 5px solid var(--primary-color);
 	--strong-border-style: 5px solid var(--primary-color);
 }
 
