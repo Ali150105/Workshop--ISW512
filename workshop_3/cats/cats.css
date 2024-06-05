@@ -20,6 +20,10 @@ h1 {
     margin-top: 80px; /* Ajusta este valor para separar más el texto de las imágenes */
 }
 
+/* Estilo para las imágenes */
 img {
-    margin-bottom: 80px /* Ajusta este valor para separar más las imágenes del texto */
+    width: 200px; /* Ancho fijo para las imágenes */
+    height: 200px; /* Altura fija para las imágenes */
+    margin-bottom: 50px; /* Margen inferior para separar las imágenes del texto */
+    object-fit: cover; /* Asegura que la imagen cubra el área de la caja manteniendo el aspecto */
 }
