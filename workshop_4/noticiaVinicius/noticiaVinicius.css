@@ -63,6 +63,7 @@ body {
     /* Centra horizontalmente el contenido */
 }
 
+
 .regresar::before {
     content: '';
     border: solid #000000;
@@ -71,6 +72,31 @@ body {
     padding: 5px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comunicado {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.twitter-embed {
+    flex: 1;
+    max-width: 200px; /* Reducir el ancho máximo del bloque del tweet */
+    margin-top: 10px; /* Ajustar la distancia entre la imagen y el tweet */
+}
+
+.twitter-tweet {
+    max-width: 300px; /* Ajusta el ancho máximo del bloque del tweet */
+    margin-top: 10px; /* Ajusta la distancia entre la imagen y el tweet */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .header img {
