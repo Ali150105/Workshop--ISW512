@@ -82,7 +82,7 @@ body {
 
 .comunicado {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px; /* Reducir el margen entre el bloque del tweet y la imagen */
 }
 
 .twitter-embed {
@@ -90,12 +90,13 @@ body {
 }
 
 .twitter-tweet {
-    max-width: 200px; /* Cambia el ancho máximo según lo que necesites */
-    padding: 10px;
+    max-width: 200px; /* Reducir el ancho máximo del bloque del tweet */
+    padding: 5px; /* Reducir el espacio interior del bloque del tweet */
     border: 1px solid #ccc;
-    border-radius: 5px; /* Añade bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade sombra */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .header img {
     display: var(--img-bloque);
