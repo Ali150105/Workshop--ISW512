@@ -73,6 +73,13 @@ body {
     -webkit-transform: rotate(135deg);
 }
 
+
+.video {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
 .header img {
     display: var(--img-bloque);
     margin: var(--margen);
