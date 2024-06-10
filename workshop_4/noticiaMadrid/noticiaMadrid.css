@@ -82,20 +82,23 @@ body {
 
 .comunicado {
     flex: 1;
-    margin-right: 10px; /* Reducir el margen entre el bloque del tweet y la imagen */
+    margin-right: 10px;
 }
 
 .twitter-embed {
     flex: 1;
+    max-width: 200px; /* Reducir el ancho máximo del bloque del tweet */
+    margin-top: 10px; /* Ajustar la distancia entre la imagen y el tweet */
 }
 
 .twitter-tweet {
-    max-width: 200px; /* Reducir el ancho máximo del bloque del tweet */
-    padding: 5px; /* Reducir el espacio interior del bloque del tweet */
+    max-width: 300px; /* Ajusta el ancho máximo del bloque del tweet */
+    margin-top: 10px; /* Ajusta la distancia entre la imagen y el tweet */
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .header img {
