@@ -89,6 +89,13 @@ body {
     flex: 1;
 }
 
+.twitter-tweet {
+    max-width: 300px; /* Cambia el ancho máximo según lo que necesites */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Añade bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade sombra */
+}
 
 .header img {
     display: var(--img-bloque);
