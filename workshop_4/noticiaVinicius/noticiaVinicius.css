@@ -92,8 +92,8 @@ body {
 }
 
 .twitter-tweet {
-    max-width: 300px; /* Ajusta el ancho máximo del bloque del tweet */
-    margin-top: 10px; /* Ajusta la distancia entre la imagen y el tweet */
+    max-width: 500px; /* Ajusta el ancho máximo del bloque del tweet */
+    margin-top: 5px; /* Ajusta la distancia entre la imagen y el tweet */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
