@@ -74,13 +74,19 @@ body {
 }
 
 
-.tweet {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    margin: 0 auto; 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comunicado {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.twitter-embed {
+    flex: 1;
 }
 
 
