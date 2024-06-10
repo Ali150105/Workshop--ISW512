@@ -98,7 +98,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .header img {
     display: var(--img-bloque);
     margin: var(--margen);
