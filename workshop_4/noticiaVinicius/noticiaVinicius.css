@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #d60000;
+    --secondary-color: white;
+    --font-color: black;
+    --main-border-style: 5px solid var(--primary-color);
+    --strong-border-style: 5px solid var(--primary-color);
+    --font-family: 'Arial, sans-serif' solid var(--font-color);
+    --text-align: center;
+    --padding: 20px;
+    --align-items: center;
+    --display: flex;
+    --position: relative;
+    --img-bloque: block;
+    --margen: 0 auto;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    text-align: var(--text-align);
+}
+
+.header {
+    display: var(--display);
+    align-items: var(--align-items);
+    justify-content: center;
+    padding: var(--padding);
+    background-color: #f8f8ff;
+    position: var(--position);
+}
+
+.Logo {
+    display: var(--display);
+    align-items: var(--align-items);
+}
+
+#logo {
+    margin: var(--margen);
+}
+
+.regresar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #000000;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.regresar::before {
+    content: '';
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comunicado {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.twitter-embed {
+    flex: 1;
+    max-width: 200px; 
+    margin-top: 10px; 
+}
+
+.twitter-tweet {
+    max-width: 500px; 
+    margin-top: 5px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.header img {
+    display: var(--img-bloque);
+    margin: var(--margen);
+}
+
+.noticia {
+    margin: 20px;
+}
+
+.noticia h1 {
+    font-size: 2em;
+}
+
+.noticia h3 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.content {
+    display: var(--display);
+    flex-wrap: wrap;
+}
+
+.content .text {
+    flex: 2;
+}
+
+.noticia img {
+    width: 1000%;
+    max-width: 500px;
+    height: auto;
+}
+
+.noticia p {
+    font-size: 1.3em;
+    text-align: justify;
+    color: #333;
+}
+
+.main_noticia h2 {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: var(--text-align);
+}
+
+h5 {
+    color: var(--primary-color);
+    text-align: var(--text-align);
+    font-size: 1.2em;
+}
