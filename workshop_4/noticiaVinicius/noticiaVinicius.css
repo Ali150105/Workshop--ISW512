@@ -40,27 +40,17 @@ body {
 
 .regresar {
     position: absolute;
-    /* Posiciona la etiqueta <a> absolutamente */
     left: 20px;
-    /* Ajusta la posición de la etiqueta <a> hacia la izquierda */
     top: 50%;
-    /* Centra verticalmente la etiqueta <a> */
     transform: translateY(-50%);
-    /* Ajusta la posición vertical */
     text-decoration: none;
-    /* Elimina el subrayado del enlace */
     color: #000000;
-    /* Color del enlace */
     width: 30px;
-    /* Ancho del contenedor de la flecha */
     height: 30px;
-    /* Alto del contenedor de la flecha */
     display: flex;
-    /* Usa flexbox para alinear el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
+
 }
 
 
@@ -87,13 +77,13 @@ body {
 
 .twitter-embed {
     flex: 1;
-    max-width: 200px; /* Reducir el ancho máximo del bloque del tweet */
-    margin-top: 10px; /* Ajustar la distancia entre la imagen y el tweet */
+    max-width: 200px; 
+    margin-top: 10px; 
 }
 
 .twitter-tweet {
-    max-width: 500px; /* Ajusta el ancho máximo del bloque del tweet */
-    margin-top: 5px; /* Ajusta la distancia entre la imagen y el tweet */
+    max-width: 500px; 
+    margin-top: 5px; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -128,7 +118,6 @@ body {
 .noticia img {
     width: 1000%;
     max-width: 500px;
-    /* Limita el ancho máximo de la imagen */
     height: auto;
 }
 
