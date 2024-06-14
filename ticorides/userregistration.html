@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de usuario</title>
-  <link rel="stylesheet" href="style.css">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -13,67 +13,68 @@
 
   <main>
     <section class="registro">
-      <h2>Registro de usuario</h2>
+      <h2>User Registration</h2>
       <form action="#">
         <div class="campos">
-          <label for="nombre">Nombre:</label>
+          <label for="nombre">First Name:</label>
           <input type="text" id="nombre" name="nombre" required>
         </div>
 
         <div class="campos">
-          <label for="apellido">Apellido:</label>
+          <label for="apellido">Last Name:</label>:</label>
           <input type="text" id="apellido" name="apellido" required>
         </div>
 
         <div class="campos">
-          <label for="correo">Correo electrónico:</label>
+          <label for="correo">Email:</label>
           <input type="email" id="correo" name="correo" required>
         </div>
 
         <div class="campos">
-          <label for="contrasena">Contraseña:</label>
+          <label for="contrasena">Password:</label>
           <input type="password" id="contrasena" name="contrasena" required>
         </div>
 
         <div class="campos">
-          <label for="repetirContrasena">Repetir contraseña:</label>
+          <label for="repetirContrasena">Repeat password:</label>
           <input type="password" id="repetirContrasena" name="repetirContrasena" required>
         </div>
 
         <div class="campos">
-          <label for="direccion">Dirección:</label>
+          <label for="direccion">Address:</label>
           <input type="text" id="direccion" name="direccion" required>
         </div>
 
         <div class="campos">
-          <label for="pais">País:</label>
+          <label for="pais">Country:</label>
           <select id="pais" name="pais" required>
-            <option value="">Seleccionar país</option>
+            <option value="">Select country</option>
             <option value="Costa Rica">Costa Rica</option>
+            <option value="Panama">Panama</option>
+            <option value="Mexico">Mexico</option>
             </select>
         </div>
 
         <div class="campos">
-          <label for="estado">Estado:</label>
+          <label for="estado">State:</label>
           <select id="estado" name="estado" required>
-            <option value="">Seleccionar estado</option>
             </select>
         </div>
 
         <div class="campos">
-          <label for="ciudad">Ciudad:</label>
+          <label for="ciudad">City:</label>
           <input type="text" id="ciudad" name="ciudad" required>
         </div>
 
         <div class="campos">
-          <label for="telefono">Teléfono:</label>
+          <label for="telefono">Phone Number:</label>
           <input type="tel" id="telefono" name="telefono" required>
         </div>
 
         <div class="botones">
-          <button type="submit">Registrarse</button>
-          <a href="#">¿Ya eres usuario? Inicia sesión aquí</a>
-          <a href="#">¿Registrarse como conductor? Haz clic aquí</a>
+          <button type="submit">Sign up</button>
+          <a href="#">¿Already an user? Login here</a>
+          <a href="#">¿Register as driver? Click here</a>
         </div>
       </form>
     </section>
