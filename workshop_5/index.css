@@ -34,10 +34,11 @@ body {
 }
 
 .hero .image-wrapper {
-    position: relative;
-    width: 150px; /* Adjust width as needed */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
     height: auto;
-    margin: 0 auto;
 }
 
 .hero .phone-image {
@@ -45,12 +46,15 @@ body {
     height: auto;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 .hero .phone-image-secondary {
-    left: 20px; /* Adjust as needed */
-    top: 20px; /* Adjust as needed */
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 20px;  /* Adjust this value as needed */
+    right: 20px;  /* Adjust this value as needed */
     opacity: 0.7;
 }
 
