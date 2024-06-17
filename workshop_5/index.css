@@ -49,13 +49,13 @@ body {
 
 .hero .phone-image-back {
     top: 0;
-    right: -15px; /* Mueve la imagen de fondo más a la derecha */
+    right: -20px; /* Mueve la imagen de fondo más a la derecha */
     z-index: 1;
 }
 
 .hero .phone-image-front {
     top: 0;
-    right: 5;
+    right: 20;
     z-index: 3;
 }
 
