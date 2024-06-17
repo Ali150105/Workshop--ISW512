@@ -45,17 +45,18 @@ body {
     width: 150px;
     height: auto;
     position: absolute;
-    top: 0;
-    right: 0;
 }
 
-.hero .phone-image-secondary {
-    width: 150px;
-    height: auto;
-    position: absolute;
-    top: 20px;  /* Adjust this value as needed */
-    right: 20px;  /* Adjust this value as needed */
-    opacity: 0.7;
+.hero .phone-image-back {
+    top: 20px;  /* Ajusta este valor según sea necesario */
+    right: 20px;  /* Ajusta este valor según sea necesario */
+    opacity: 0.5;
+}
+
+.hero .phone-image-front {
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .stats {
