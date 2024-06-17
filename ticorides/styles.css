@@ -9,7 +9,6 @@ body {
     height: 100vh;
     flex-direction: column;
 }
-
 .container {
     display: flex;
     justify-content: center;
@@ -49,7 +48,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.google-login:hover {
+.google-login {
     background-color: #357ae8;
 }
 
@@ -61,15 +60,20 @@ form {
 .textbox {
     position: relative;
     margin-bottom: 20px;
+    display: flex; /* Modificación */
 }
 
 .textbox input {
-    width: 100%;
+    flex: 1; /* Modificación */
     padding: 10px;
     background: #f4f4f4;
     border: none;
     outline: none;
     font-size: 16px;
+}
+
+.textbox input:first-child {
+    margin-right: 10px; /* Espacio entre los campos First Name y Last Name */
 }
 
 .btn {
@@ -82,7 +86,7 @@ form {
     font-size: 16px;
 }
 
-.btn:hover {
+.btn {
     background-color: #555;
 }
 
@@ -108,7 +112,7 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover {
+footer a {
     text-decoration: underline;
 }
 
