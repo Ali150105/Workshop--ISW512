@@ -51,7 +51,7 @@ body {
 
 .hero .phone-image-back {
     top: 10px;
-    left: 2px; 
+    left: 0px; 
     z-index: 1;
 }
 
