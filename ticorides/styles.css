@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 50px 0;
-    width: 300px;
+    width: 400px;
     text-align: center;
 }
 
@@ -32,33 +32,37 @@ body {
 h1 {
     margin: 0;
     font-size: 24px;
+    font-weight: normal;
 }
 
 h2 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
 }
 
 .form-group {
     margin-bottom: 15px;
     text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
 .form-group input,
 .form-group select {
-    width: calc(100% - 22px);
+    width: 48%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group select {
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .form-links {
@@ -84,6 +88,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
 }
 
 footer {
