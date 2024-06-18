@@ -45,24 +45,31 @@ h2 {
 .form-group {
     margin-bottom: 15px;
     text-align: left;
-    display: flex;
-    justify-content: space-between;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
 }
 
 .form-group input,
 .form-group select {
-    width: 48%;
+    width: calc(100% - 22px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 .form-group input[type="email"],
 .form-group input[type="text"],
 .form-group input[type="password"],
 .form-group select {
-    width: 100%;
-    margin-bottom: 15px;
+    width: calc(100% - 22px);
+    margin: 0 auto;
 }
 
 .form-links {
