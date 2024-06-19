@@ -86,6 +86,9 @@ h2 {
 
 .form-links {
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .form-links p {
