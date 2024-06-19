@@ -86,12 +86,13 @@ h2 {
 
 .form-links {
     margin-bottom: 15px;
+}
+
+.modification{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }
-
 .form-links p {
     margin: 5px 0;
     font-size: 14px;
