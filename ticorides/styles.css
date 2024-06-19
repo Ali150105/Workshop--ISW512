@@ -44,7 +44,6 @@ h2 {
 
 .form-row {
     display: flex;
-    
 }
 
 .form-group {
@@ -85,14 +84,16 @@ h2 {
 }
 
 .form-links {
-    margin-bottom: 15px;
-}
-
-form-links > modification{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
 }
+
+.column {
+    flex: 1;
+    text-align: left;
+    margin: 0 10px;
+}
+
 .form-links p {
     margin: 5px 0;
     font-size: 14px;
