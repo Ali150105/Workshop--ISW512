@@ -45,6 +45,7 @@ h2 {
 .form-row {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .form-group {
