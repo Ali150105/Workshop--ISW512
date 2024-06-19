@@ -44,8 +44,7 @@ h2 {
 
 .form-row {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    
 }
 
 .form-group {
@@ -89,6 +88,7 @@ h2 {
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
 }
 
