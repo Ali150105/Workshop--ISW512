@@ -48,10 +48,18 @@ nav {
     font-weight: bold;
 }
 
-.nav-select {
+.nav-select-container {
     display: none;
-    margin: 10px 0;
-    padding: 10px;
+    background-color: #FFA500;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.nav-select {
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+    font-size: 1em;
 }
 
 main {
@@ -94,9 +102,8 @@ footer {
         display: none;
     }
 
-    .nav-select {
-        display: inline-block;
-        width: 100%;
+    .nav-select-container {
+        display: block;
     }
 
     .box {
