@@ -40,7 +40,10 @@ body {
 
 .container1 {
     background-color: orange;
-    padding: 2px;
+    padding: 20px; /* Padding to make the orange stripe thicker */
+    width: 100%;
+    position: relative; /* Enable positioning of children */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 ul {
@@ -81,11 +84,26 @@ ul {
     .container4 {
         width: 100%;
         border-radius: 5px;
+        box-sizing: border-box;
     }
 
     .container {
         font-size: 24px;
         padding: 10px;
+    }
+
+    .combobox {
+        display: block; /* Show combobox on mobile */
+        width: 120px; /* Fixed width to make it smaller */
+        padding: 5px; /* Smaller padding */
+        font-size: 12px; /* Smaller font size */
+        border-radius: 3px; /* Smaller border radius */
+        border: 1px solid black;
+        position: absolute; /* Position it within the container */
+        top: 10px; /* Adjust top position */
+        left: 10px; /* Adjust left position */
+        box-sizing: border-box; /* Include padding and border in the width */
+        z-index: 1000; /* Ensure it appears on top */
     }
 }
 
@@ -97,8 +115,22 @@ ul {
     .container4 {
         width: 100%;
         border-radius: 5px;
+        box-sizing: border-box;
     }
 
+    .combobox {
+        display: block; /* Show combobox on tablets and small desktops */
+        width: 120px; /* Fixed width to make it smaller */
+        padding: 5px; /* Smaller padding */
+        font-size: 12px; /* Smaller font size */
+        border-radius: 3px; /* Smaller border radius */
+        border: 1px solid black;
+        position: absolute; /* Position it within the container */
+        top: 10px; /* Adjust top position */
+        left: 10px; /* Adjust left position */
+        box-sizing: border-box; /* Include padding and border in the width */
+        z-index: 1000; /* Ensure it appears on top */
+    }
 }
 
 .principal1 {
@@ -119,6 +151,7 @@ ul {
     .container3 {
         width: 40%;
         border-radius: 5px;
+        box-sizing: border-box;
     }
 
     .container4 {
@@ -127,25 +160,15 @@ ul {
         align-self: flex-end;
         margin-left: 68%;
     }
-}
-@media (min-width: 600px) {
-    .combobox {
-        display: block;
-        padding: 0;
-        border-radius: 0;
-        border: 1px solid black;
-    }
-}
 
-@media (min-width: 936px) {
+    .combobox {
+        display: none; /* Hide combobox on larger screens */
+    }
+
     .enlaces {
         display: block;
         padding: 0;
         border-radius: 0;
         border: 0;
-    }
-
-    .combobox {
-        display: none;
     }
 }
