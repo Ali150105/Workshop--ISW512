@@ -1,84 +1,74 @@
-function getFromLocalStorage(key) {
-	return JSON.parse(localStorage.getItem(key)) || [];
+function validateUser() {
+	const username = document.getElementById('username').value;
+	const password = document.getElementById('password').value;
+	const errorElement = document.getElementById('error_msg');
+
+	if (username == 'admin' && password == 'password') {
+		console.log('logged in');
+		// localStorage.setItem('username', username);
+		errorElement.innerHTML = 'User is valid';
+		errorElement.setAttribute("style", "display:block;");
+	} else {
+		errorElement.innerHTML = 'Username or Password invalid';
+		errorElement.setAttribute("style", "display:block;");
+	}
 }
 
-function saveToLocalStorage(key, data) {
-    localStorage.setItem(key, JSON.stringify(data));
-  }
 
 function loadUser() {
-	// Obtén el nombre de usuario de la query string
+	// look for the username from the querystring
 	const urlParams = new URLSearchParams(window.location.search);
-	const username = urlParams.get('u');
+	username = urlParams.get('u');
 	if (username) {
-		// Recupera los usuarios del almacenamiento local
+		//loop through the user's array
 		const users = getFromLocalStorage('users');
-		let matchedUser = null;
-
-		// Encuentra el usuario que coincida con el nombre de usuario
+		let matcheduser = '';
 		users.forEach((user) => {
-			if (user.username === username) {
-				matchedUser = user;
+			//find the user that matches the username
+			if(user.username === username){
+				matcheduser = user;
 				return;
 			}
-		});
+		 });
 
-		// Si se encuentra el usuario, rellena el formulario con sus datos
-		if (matchedUser) {
-			document.getElementById('username').value = matchedUser.username;
-			document.getElementById('firstname').value = matchedUser.firstname;
-			document.getElementById('password').value = matchedUser.password;
-		}
+		//fill the edit form with the user values
+		document.getElementById('username').value = matcheduser.username;
+		document.getElementById('firstname').value = matcheduser.firstname;
+		document.getElementById('password').value = matcheduser.password;
+
 	}
 }
 
 function loadUsers() {
-	// Recupera los usuarios del almacenamiento local
+	// loop the users in localstorage
 	const users = getFromLocalStorage('users');
-	users.forEach((user, index) => {
-		// Añade cada usuario a la tabla existente
+	users.forEach((user,index) => {
+		// add each user to the the existing table
 		const table = document.getElementById("user-table-rows");
-		table.innerHTML += `<tr><th scope="row">${index}</th><td>${user.firstname}</td><td>${user.username}</td><td>${user.type}</td><td><a href="./edit_user.html?u=${user.username}">Edit</a> | <a href="#">Delete</a></td></tr>`;
+		table.innerHTML +=  <tr><th scope="row">${index}</th><td>${user.firstname}</td><td>${user.username}</td><td>${user.type}</td><td> <a href="./edit_user.html?u=${user.username}">Edit</a> | <a href="">Delete</a></td></tr>
 	});
-}
 
+}
 function saveUser() {
 	const username = document.getElementById('username').value;
 	const firstname = document.getElementById('firstname').value;
 	const password = document.getElementById('password').value;
 
-	const users = getFromLocalStorage('users');
-	let userIndex = users.findIndex((user) => user.username === username);
+	const user = {
+		username,
+		firstname,
+		password,
+		"type": "user"
+	};
 
-	if (userIndex !== -1) {
-		// Actualizar usuario existente
-		users[userIndex].firstname = firstname;
-		users[userIndex].password = password;
+	if (saveToLocalStorage('users', user)) {
+		alert('User saved');
+		document.location.href = "./dashboard.html";
 	} else {
-		// Añadir nuevo usuario
-		users.push({
-			username,
-			firstname,
-			password,
-			"type": "user"
-		});
+		alert('There was an error registering the user');
 	}
-
-	saveToLocalStorage('users', users);
-
-	alert('User saved');
-	document.location.href = "./dashboard.html";
 }
 
-function deleteUser(username) {
-	const users = getFromLocalStorage('users');
-	const updatedUsers = users.filter(user => user.username !== username);
-
-	saveToLocalStorage('users', updatedUsers);
-
-	alert('User deleted');
-	loadUser(); //recarga la tabla de usuarios
-}
 
 function editUser() {
 	const username = document.getElementById('username').value;
@@ -97,6 +87,8 @@ function editUser() {
 	}
 }
 
+
+
 function bindEvents() {
 	if(document.getElementById('register-button')) {
 		document.getElementById('register-button').addEventListener('click', registerButtonHandler);
@@ -106,10 +98,15 @@ function bindEvents() {
 	}
 }
 
-function registerButtonHandler() {
-	saveUser();
+function editButtonHandler(element) {
 	editUser();
 }
 
-bindEvents();
-loadUser();
+
+function loginButtonHandler(element) {
+	validateUser();
+}
+
+function registerButtonHandler(element) {
+	saveUser();
+}
